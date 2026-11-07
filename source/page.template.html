@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" data-layout="desktop" data-night="false">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#5b285d">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%238cd740' stroke='%233a7045' stroke-width='2' d='M16 2L28 16 16 30 4 16Z'/%3E%3Cpath fill='%232eac63' d='M16 2v28l12-14Z'/%3E%3C/svg%3E">
+<meta name="description" content="Cozy Sims 4 mods and little game experiments by JinJinJenn. Small things that make play feel a bit kinder.">
+<title>JinJinJenn · Make yourself at home</title>
+<style>
+:root{color-scheme:light;--ink:#3d123e;--paper:#fff5df;--plum:#4f1852;--lavender:#c8adf5;--green:#c5e5a5;--pink:#f477a6;--shadow:0 7px 0 #501a4930,0 18px 55px #2d102b26;--focus:#5b1589;--move-x:0;--move-y:0;font-family:ui-rounded,"Trebuchet MS",Arial,sans-serif;font-synthesis:none}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#241428}button,a,input{touch-action:manipulation}button{font:inherit;color:inherit}button,a{-webkit-tap-highlight-color:#d6adeb55}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--focus);outline-offset:5px}button:disabled{cursor:default}img{display:block;max-width:100%}button{border:0}svg{display:block}.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.skip-link{position:fixed;top:8px;left:8px;z-index:200;background:var(--paper);padding:12px 20px;border:3px solid var(--plum);border-radius:12px;transform:translateY(-150%)}.skip-link:focus{transform:none}.site-shell{width:100%;margin:auto;overflow:hidden;background:var(--paper)}.garden{position:relative;isolation:isolate;min-height:max(760px,100svh);display:flex;flex-direction:column;overflow:hidden;background:#e6b5cf}.garden-background{position:absolute;inset:-2%;width:104%;height:104%;max-width:none;object-fit:cover;object-position:50% 50%;z-index:-3;transition:filter .65s;transform:translate3d(calc(var(--move-x)*-3px),calc(var(--move-y)*-2px),0)}.garden-shade{position:absolute;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(180deg,#371b3c15,#36143200 45%,#3e173620);transition:background .6s}.art{display:block;position:relative;overflow:hidden;flex:none;isolation:isolate}.art img{position:absolute;max-width:none;user-select:none;-webkit-user-drag:none;pointer-events:none}.scene-decoration{position:absolute;pointer-events:none;z-index:2;will-change:transform}.left-foliage{width:min(29vw,560px);min-width:340px;left:-2%;top:-4%;transform:translate3d(calc(var(--move-x)*-12px),calc(var(--move-y)*-7px),0)}.top-foliage{width:min(77vw,1470px);left:-12%;top:-8%;transform:translate3d(calc(var(--move-x)*-16px),calc(var(--move-y)*-8px),0)}.right-foliage{width:min(39vw,700px);right:-1%;bottom:30px;transform:translate3d(calc(var(--move-x)*-10px),calc(var(--move-y)*-6px),0)}.site-header{position:absolute;z-index:40;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:18px clamp(20px,4vw,86px)}.brand{width:clamp(250px,25vw,410px);display:block;flex:none;filter:drop-shadow(0 4px 1px #39153b20);transition:transform .2s}.brand:hover{transform:rotate(-1deg) translateY(-2px)}.site-nav{display:flex;align-items:center;gap:10px;flex-wrap:nowrap}.folder{width:clamp(74px,6vw,105px);min-height:46px;display:flex;align-items:center;justify-content:center;text-decoration:none;background:transparent;padding:0;transition:transform .18s,filter .18s;filter:drop-shadow(0 3px 0 #44174533)}.folder .art{width:100%}.folder:hover,.folder:focus-visible{transform:translateY(-4px) rotate(-2deg);filter:drop-shadow(0 7px 1px #44174530)}.moon-button{width:52px;height:54px;flex:none;padding:2px;background:transparent;transition:transform .25s}.moon-button:hover{transform:rotate(12deg)}.moon-button .art{width:100%}.garden-grid{position:relative;z-index:5;display:grid;grid-template-columns:minmax(270px,340px) minmax(260px,1fr) minmax(300px,368px);align-items:center;gap:clamp(26px,4vw,100px);width:100%;max-width:1980px;flex:1;margin:auto;padding:135px clamp(28px,5vw,100px) 118px}.welcome-window{position:relative;width:100%;max-width:340px;justify-self:start;z-index:15;transform:perspective(1100px) rotateY(calc(var(--move-x)*1deg));transform-origin:center}.welcome-window>.art{width:100%}.welcome-action{position:absolute;bottom:4.2%;left:18%;width:65%;background:transparent;padding:0;transition:transform .18s,filter .18s;filter:drop-shadow(0 3px 0 #4c184b15);border-radius:14px}.welcome-action .art{width:100%}.welcome-action:hover{transform:translateY(-3px);filter:drop-shadow(0 6px 0 #4c184b25)}.welcome-action:active{transform:translateY(2px)}.characters{width:min(100%,480px);position:relative;justify-self:center;align-self:center;margin-top:70px;z-index:5;transform:translate3d(calc(var(--move-x)*4px),calc(var(--move-y)*2px),0)}.character-stage{position:relative;width:100%;aspect-ratio:1.017/1}.portrait{width:100%;position:absolute;bottom:0;left:0;filter:drop-shadow(1px 6px 3px #4021413d)}.jewel-anchor{position:absolute;width:17%;height:27%;top:-21%;z-index:8;display:flex;align-items:center;justify-content:center}.jewel-anchor.jerry{left:19.5%}.jewel-anchor.ruby{left:49.5%;top:-24%}.jewel-fallback{width:100%;animation:jewel-float 4.8s ease-in-out infinite}.ruby .jewel-fallback{animation-delay:-1.6s}.garden[data-renderer=webgl] .jewel-fallback{opacity:0}.character-caption{position:absolute;left:50%;bottom:-36px;transform:translateX(-50%);color:#fff8e8;text-shadow:0 1px 5px #2a0d29;text-align:center;white-space:nowrap;font-size:12px;letter-spacing:.05em;opacity:.86}.gpu-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:9}.collection-window{width:100%;max-width:368px;position:relative;justify-self:end;z-index:15;transform:perspective(1100px) rotateY(calc(var(--move-x)*-1deg))}.collection-window>.art{width:100%}.collection-hotspots{position:absolute;inset:0;z-index:3}.mod-hotspot{position:absolute;left:4%;width:92%;height:12.4%;padding:0;background:transparent;border-radius:8px;transition:background .15s,box-shadow .15s}.mod-hotspot:hover{background:#ffc2e21f;box-shadow:inset 0 0 0 2px #eab5da70}.mod-hotspot:focus-visible{outline:3px solid #7c378b;outline-offset:-3px;background:#ffc2e225}.mod-hotspot[data-project=love-notes]{top:11%}.mod-hotspot[data-project=surprise-gifts]{top:23.5%}.mod-hotspot[data-project=thinking-of-you]{top:36%}.mod-hotspot[data-project=toasts]{top:48.5%}.mod-hotspot[data-project=gentle-hearts]{top:61%}.mod-hotspot[data-project=toddler-tv]{top:73.5%}.devlog-hotspot{position:absolute;left:4%;right:4%;bottom:2%;height:9%;border-radius:8px}.devlog-hotspot:hover{background:#ffffff33}.native-collection{display:none}.window{border:3px solid var(--plum);border-radius:17px;background:var(--paper);overflow:hidden;box-shadow:var(--shadow)}.window-bar{display:flex;align-items:center;gap:9px;padding:12px 14px;background:linear-gradient(#e7ceff,#bca0ef);border-bottom:2px solid var(--plum);font-weight:800;font-size:18px}.mini-gem{width:16px;height:27px;flex:none;background:linear-gradient(115deg,#caee53 10%,#6dca27 43%,#19985a 44%,#8ed344 75%);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);filter:drop-shadow(1px 2px 0 #2d6739)}.window-controls{margin-left:auto;display:flex;align-items:center;gap:5px}.window-controls i{display:block;width:13px;height:12px;border:2px solid var(--plum);box-shadow:1px 1px 0 #fff8}.native-mod{display:flex;gap:14px;align-items:center;padding:15px 16px;width:100%;text-align:left;background:transparent;border-bottom:1px solid #dcb6d2;min-height:84px}.native-mod:hover{background:#f8e9ec}.native-mod .mod-name{display:block;font-size:18px;font-weight:800;margin-bottom:5px}.native-mod .mod-icon{width:47px;height:47px;flex:none;filter:drop-shadow(0 2px 0 #55214d20)}.native-mod .arrow{margin-left:auto;font-size:25px}.badge{display:inline-block;border-radius:99px;padding:4px 11px;font-size:12px;font-weight:700;line-height:1.2;background:#e8c3f4;color:#542257}.badge.testing{background:#cae5b0;color:#315333}.native-devlog{display:block;padding:17px;background:#e6d0ff;font-weight:700;font-size:14px}.taskbar{position:absolute;left:12px;right:12px;bottom:12px;min-height:57px;z-index:30;display:flex;align-items:center;padding:8px 22px;gap:10px}.taskbar-bg{position:absolute;inset:0;width:100%;height:100%!important;z-index:-1}.taskbar-brand{font-size:18px;font-weight:900;text-decoration:none;display:flex;align-items:center;gap:8px;margin-right:20px;white-space:nowrap}.taskbar-brand .mini-gem{height:25px;width:15px}.task-tab{width:115px;min-height:38px;display:flex;align-items:center;padding:0;background:transparent;transition:transform .15s}.task-tab .art{width:100%}.task-tab:hover{transform:translateY(-2px)}.taskbar-spacer{flex:1}.effects-button{display:flex;align-items:center;gap:7px;background:#fff3dfa8;border:1px solid #71457f66;border-radius:8px;padding:8px 12px;font-size:12px;font-weight:700;min-height:36px;white-space:nowrap;margin-right:160px}.effects-button:hover{background:#fff6e8}.effects-button .pause-mark{display:block;letter-spacing:2px;font-weight:900}.cat-button{position:absolute;right:28px;bottom:3px;width:166px;padding:0;background:transparent;transform-origin:70% 90%;transition:transform .2s}.cat-button .art{width:100%}.cat-button:hover{transform:rotate(-3deg) translateY(-2px)}.cat-button.petted{animation:cat-nudge .55s ease}.purr{position:absolute;right:45px;bottom:114px;background:var(--paper);border:2px solid var(--plum);border-radius:14px;padding:7px 13px;font-size:13px;font-weight:bold;opacity:0;transform:translateY(8px);transition:opacity .2s,transform .2s;pointer-events:none}.purr.visible{opacity:1;transform:none}.site-footer{position:relative;z-index:1;padding:16px 24px;background:#321935;color:#ddc7df;display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px;line-height:1.6;text-align:center}.site-footer a{text-underline-offset:3px}.site-footer .sep{opacity:.5}.project-dialog{padding:0;border:3px solid var(--plum);border-radius:18px;width:min(570px,calc(100vw - 28px));max-height:calc(100svh - 32px);background:var(--paper);color:var(--ink);box-shadow:0 25px 100px #1f092c7a;overflow:auto}.project-dialog::backdrop{background:#25102a9c;backdrop-filter:blur(7px)}.dialog-header{position:sticky;top:0;z-index:2;background:linear-gradient(#edd8ff,#b8a0ed);border-bottom:2px solid var(--plum);display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:17px;font-weight:800}.close-dialog{margin-left:auto;border:2px solid var(--plum);border-radius:5px;background:#fff8ef;padding:0;width:34px;height:32px;line-height:1;font-size:23px}.dialog-body{padding:26px 28px 30px}.dialog-body h2{font:700 clamp(29px,5vw,43px)/1.06 Georgia,serif;margin:15px 0 18px;letter-spacing:-.025em}.dialog-body p{font-size:16px;line-height:1.65;margin:0 0 16px}.dialog-body ul{padding-left:21px;line-height:1.7;font-size:15px;margin:14px 0 20px}.dialog-body li+li{margin-top:6px}.dialog-note{padding:14px 16px;border:1px solid #d8b5cd;border-radius:12px;background:#f7e8ec;font-size:14px!important}.dialog-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 18px;background:#542458;color:#fff9e7;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 3px 0 #300e34}.dialog-link:hover{background:#713875}.dialog-link.secondary{background:#e4d2ef;color:#4a1d4e;box-shadow:0 3px 0 #c3a3ce;margin-left:8px}.about-links{display:flex;gap:10px;flex-wrap:wrap}.about-links .dialog-link.secondary{margin:0}.loading-art{position:absolute;z-index:60;top:112px;left:50%;transform:translateX(-50%);background:#fff6e6e6;color:#56275b;border:1px solid #e4bfe2;border-radius:99px;padding:8px 14px;font-size:12px;transition:opacity .3s;pointer-events:none}.loading-art.done{opacity:0}.qa-width .site-shell{box-shadow:0 0 0 1px #a588ab,0 0 100px #0006}.qa-width{padding:0 12px}.qa-width .project-dialog{max-width:calc(var(--qa-width,100vw) - 24px)}
+[data-night=true] .garden-background{filter:brightness(.68) saturate(.8) hue-rotate(8deg)}[data-night=true] .garden-shade{background:linear-gradient(180deg,#21164160,#371b420c 40%,#191b4d66)}[data-night=true] .site-shell{--paper:#fff1dd}[data-night=true] .moon-button{transform:rotate(-15deg)}[data-paused=true] *,[data-reduced-motion=true] *{scroll-behavior:auto!important}[data-paused=true] .jewel-fallback,[data-reduced-motion=true] .jewel-fallback{animation:none}[data-reduced-motion=true] .cat-button.petted{animation:none}[data-reduced-motion=true] .scene-decoration,[data-reduced-motion=true] .characters,[data-reduced-motion=true] .garden-background,[data-reduced-motion=true] .welcome-window,[data-reduced-motion=true] .collection-window{transform:none;will-change:auto}
+@keyframes jewel-float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-8px) rotate(3deg)}}@keyframes cat-nudge{0%,100%{transform:rotate(0)}30%{transform:rotate(-6deg) translateY(-6px)}70%{transform:rotate(4deg)}}
+[data-layout=tablet] .garden{min-height:0;background:#eddaea}[data-layout=tablet] .garden-background{height:650px;object-position:50% 30%}[data-layout=tablet] .garden-shade{height:680px;background:linear-gradient(180deg,#34113810 60%,#eddaea)}[data-layout=tablet] .site-header{padding:18px 27px;gap:18px}[data-layout=tablet] .brand{width:270px}[data-layout=tablet] .site-nav{gap:7px}[data-layout=tablet] .folder{width:76px}[data-layout=tablet] .moon-button{width:43px}[data-layout=tablet] .garden-grid{max-width:850px;grid-template-columns:1fr 1fr;gap:36px 28px;padding:150px 32px 140px}[data-layout=tablet] .characters{grid-column:1/-1;grid-row:1;width:340px;margin:12px 0 0}[data-layout=tablet] .welcome-window{grid-column:1;grid-row:2;max-width:340px;justify-self:center}[data-layout=tablet] .collection-window{grid-column:2;grid-row:2;max-width:350px;justify-self:center}[data-layout=tablet] .character-caption{display:none}[data-layout=tablet] .left-foliage{width:280px;min-width:0;left:-80px;top:30px}[data-layout=tablet] .top-foliage{width:750px;top:-35px;left:-160px}[data-layout=tablet] .right-foliage{width:470px;bottom:35px;right:-60px}[data-layout=tablet] .taskbar-brand{font-size:15px;margin-right:6px}[data-layout=tablet] .task-tab{width:90px}[data-layout=tablet] .effects-button{margin-right:100px;padding:8px;font-size:11px}[data-layout=tablet] .cat-button{width:128px;right:12px}[data-layout=tablet] .taskbar{padding:8px 14px;gap:7px}
+[data-layout=mobile] .garden{min-height:0;background:#efdfec}[data-layout=mobile] .garden-background{top:0;left:-20%;width:140%;height:570px;object-position:47% 45%;transform:none}[data-layout=mobile] .garden-shade{height:610px;background:linear-gradient(180deg,#3b1a4b05 50%,#efdfec 98%)}[data-layout=mobile] .site-header{padding:15px 18px;display:grid;grid-template-columns:1fr;gap:14px;justify-items:center}[data-layout=mobile] .brand{width:min(100%,300px);margin-right:22px}[data-layout=mobile] .site-nav{width:100%;justify-content:center;gap:8px}[data-layout=mobile] .folder{width:calc((100% - 24px)/4);max-width:86px;min-height:47px}[data-layout=mobile] .moon-button{position:absolute;width:39px;height:43px;top:24px;right:10px}[data-layout=mobile] .garden-grid{display:flex;flex-direction:column;align-items:center;gap:29px;padding:190px 18px 155px}[data-layout=mobile] .characters{order:0;width:min(100%,315px);margin:0 0 5px}[data-layout=mobile] .character-caption{display:none}[data-layout=mobile] .welcome-window{order:1;max-width:355px;width:100%;transform:none}[data-layout=mobile] .collection-window{order:2;max-width:390px;transform:none}[data-layout=mobile] .collection-window>.art,[data-layout=mobile] .collection-hotspots{display:none}[data-layout=mobile] .native-collection{display:block}[data-layout=mobile] .left-foliage{width:220px;min-width:0;left:-85px;top:55px;transform:none}[data-layout=mobile] .top-foliage{display:none}[data-layout=mobile] .right-foliage{width:410px;right:-80px;bottom:44px;opacity:.82;transform:none}[data-layout=mobile] .taskbar{bottom:12px;left:8px;right:8px;padding:10px 11px;gap:8px;min-height:60px}[data-layout=mobile] .taskbar-brand{display:none}[data-layout=mobile] .task-tab{width:84px;min-height:38px}[data-layout=mobile] .taskbar-spacer{display:none}[data-layout=mobile] .effects-button{margin:0 0 0 auto;min-width:44px;min-height:40px;justify-content:center;padding:8px}[data-layout=mobile] .effects-button .effects-text{display:none}[data-layout=mobile] .cat-button{width:132px;right:9px;bottom:52px}[data-layout=mobile] .purr{right:36px;bottom:154px}[data-layout=mobile] .site-footer{font-size:11px;gap:6px 10px;padding:17px 18px}[data-layout=mobile] .loading-art{top:150px;white-space:nowrap}[data-layout=mobile] .dialog-body{padding:22px 20px}[data-layout=mobile] .project-dialog{width:min(500px,calc(100vw - 24px))}[data-layout=mobile][data-night=true] .garden{background:#372d49}[data-layout=mobile][data-night=true] .garden-shade{background:linear-gradient(180deg,#24144020 40%,#372d49)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.scene-decoration,.characters,.garden-background,.welcome-window,.collection-window{transform:none!important;will-change:auto!important}}
+[data-layout=tablet] .brand{width:32%;min-width:200px;max-width:270px}
+[data-layout=mobile] .brand{width:min(calc(100% - 50px),300px);margin-right:28px}
+[data-layout=mobile] .garden-grid{padding-top:240px}
+.welcome-action{min-height:44px}.task-tab{min-height:44px}.close-dialog{width:44px;height:44px;flex:none}
+.pause-mark{width:12px;height:13px;font-size:0;position:relative}
+.pause-mark::before{content:"";display:block;width:10px;height:12px;border-left:3px solid currentColor;border-right:3px solid currentColor}
+[data-paused=true] .pause-mark::before{width:12px;height:13px;border:0;background:currentColor;clip-path:polygon(8% 0,100% 50%,8% 100%)}
+[data-layout=mobile] .moon-button{width:44px;height:44px}
+[data-layout=mobile] .effects-button{min-height:44px}
+.effects-button:disabled{opacity:.7}
+[data-layout=mobile] .scene-decoration,[data-layout=tablet] .scene-decoration{will-change:auto}
+.garden[data-renderer=webgl] .jewel-fallback{animation:none}
+.garden-grid{z-index:auto}
+[data-layout=mobile] .task-tab{min-height:44px}
+</style>
+<script>document.documentElement.dataset.layout=innerWidth<700?'mobile':innerWidth<1100?'tablet':'desktop';</script>
+</head>
+<body>
+<a class="skip-link" href="#mods">Skip to the mods</a>
+<div class="site-shell" id="siteShell">
+<main class="garden" id="home" data-renderer="static">
+<img class="garden-background" data-src-asset="00-background-garden" alt="" decoding="async" fetchpriority="high">
+<div class="garden-shade" aria-hidden="true"></div>
+<div class="scene-decoration left-foliage" aria-hidden="true"><span class="art" data-asset="01-foliage-left"></span></div>
+<div class="scene-decoration top-foliage" aria-hidden="true"><span class="art" data-asset="02-foliage-top" data-skip-mobile></span></div>
+<div class="scene-decoration right-foliage" aria-hidden="true"><span class="art" data-asset="19-foliage-right"></span></div>
+<header class="site-header">
+<a class="brand" href="#home" aria-label="JinJinJenn home"><span class="art" data-asset="06-logo" aria-hidden="true"></span></a>
+<nav class="site-nav" aria-label="Main navigation">
+<a class="folder" href="#mods" aria-label="Explore the Sims 4 mods"><span class="art" data-asset="09-nav-mods" aria-hidden="true"></span></a>
+<a class="folder" href="https://jinjinjenn.github.io/devlog/" target="_blank" rel="noopener noreferrer" aria-label="Read the devlog (opens a new tab)"><span class="art" data-asset="10-nav-devlog" aria-hidden="true"></span></a>
+<button class="folder" type="button" data-about aria-label="About Jenn"><span class="art" data-asset="11-nav-about" aria-hidden="true"></span></button>
+<a class="folder" href="https://github.com/JinJinJenn" target="_blank" rel="noopener noreferrer" aria-label="JinJinJenn on GitHub (opens a new tab)"><span class="art" data-asset="12-nav-github" aria-hidden="true"></span></a>
+<button class="moon-button" id="themeButton" type="button" aria-label="Switch to moonlit garden" aria-pressed="false"><span class="art" data-asset="14-theme-moon" aria-hidden="true"></span></button>
+</nav>
+</header>
+<p class="loading-art" id="loadingArt" role="status">Opening the garden…</p>
+<div class="garden-grid">
+<section class="welcome-window" id="welcome" aria-labelledby="welcomeTitle">
+<h1 class="sr-only" id="welcomeTitle">Make yourself at home.</h1>
+<p class="sr-only">Cozy Sims 4 mods and little game experiments by Jenn. Small things that make play feel a bit kinder. MoveAnywhere is in testing: move your household into any lot, including parks.</p>
+<span class="art" data-asset="07-welcome-panel" aria-hidden="true"></span>
+<button type="button" class="welcome-action" data-project="move-anywhere" aria-label="View the MoveAnywhere project"><span class="art" data-asset="13-view-project-button" aria-hidden="true"></span></button>
+</section>
+<div class="characters">
+<div class="character-stage" role="img" aria-label="Jerry and Ruby, a joyful dwarf and a blue-haired elven ranger, together in the garden">
+<span class="art portrait" data-asset="03-jerry-ruby" aria-hidden="true"></span>
+<div class="jewel-anchor jerry" id="jerryAnchor" aria-hidden="true"><span class="art jewel-fallback" data-asset="04-plumbob-jerry"></span></div>
+<div class="jewel-anchor ruby" id="rubyAnchor" aria-hidden="true"><span class="art jewel-fallback" data-asset="05-plumbob-ruby"></span></div>
+</div>
+<span class="character-caption" aria-hidden="true">A little more magic in the everyday.</span>
+</div>
+<section class="collection-window" id="mods" aria-label="The mod collection" tabindex="-1">
+<span class="art" data-asset="08-mod-collection-panel" data-skip-mobile aria-hidden="true"></span>
+<div class="collection-hotspots">
+<button class="mod-hotspot" data-project="love-notes" aria-label="Love Notes. In the workshop. View project."></button>
+<button class="mod-hotspot" data-project="surprise-gifts" aria-label="Surprise Gifts. In testing. View project."></button>
+<button class="mod-hotspot" data-project="thinking-of-you" aria-label="Thinking of You. In the workshop. View project."></button>
+<button class="mod-hotspot" data-project="toasts" aria-label="Toasts. In the workshop. View project."></button>
+<button class="mod-hotspot" data-project="gentle-hearts" aria-label="Gentle Hearts. In the workshop. View project."></button>
+<button class="mod-hotspot" data-project="toddler-tv" aria-label="Toddler TV. In testing. View project."></button>
+<a class="devlog-hotspot" href="https://jinjinjenn.github.io/devlog/" target="_blank" rel="noopener noreferrer" aria-label="From the devlog: How a park became a home. Opens in a new tab."></a>
+</div>
+<div class="native-collection window">
+<div class="window-bar"><span class="mini-gem" aria-hidden="true"></span><h2 style="font:inherit;margin:0">The mod collection</h2><span class="window-controls" aria-hidden="true"><i></i><i></i></span></div>
+<div id="nativeModList"></div>
+<a class="native-devlog" href="https://jinjinjenn.github.io/devlog/" target="_blank" rel="noopener noreferrer">From the devlog: How a park became a home</a>
+</div>
+</section>
+</div>
+<canvas class="gpu-canvas" id="gardenGPU" aria-hidden="true"></canvas>
+<div class="taskbar" aria-label="Garden controls">
+<span class="art taskbar-bg" data-asset="15-taskbar" aria-hidden="true"></span>
+<a class="taskbar-brand" href="#home"><span class="mini-gem" aria-hidden="true"></span>JinJinJenn</a>
+<a class="task-tab" href="#welcome" aria-label="Welcome"><span class="art" data-asset="16-taskbar-tab-welcome" aria-hidden="true"></span></a>
+<a class="task-tab" href="#mods" aria-label="The mod collection"><span class="art" data-asset="17-taskbar-tab-mods" aria-hidden="true"></span></a>
+<span class="taskbar-spacer"></span>
+<button class="effects-button" id="motionButton" type="button" aria-label="Pause garden animation" aria-pressed="false"><span class="pause-mark" id="motionMark" aria-hidden="true">Ⅱ</span><span class="effects-text" id="motionText">Pause animation</span></button>
+<button class="cat-button" id="catButton" type="button" aria-label="Pet the sleeping cat"><span class="art" data-asset="18-sleeping-cat" aria-hidden="true"></span></button>
+<span class="purr" id="purr" role="status" aria-live="polite"></span>
+</div>
+</main>
+<footer class="site-footer"><span>JinJinJenn · Made for my own game, shared with you.</span><span class="sep" aria-hidden="true">✦</span><a href="https://github.com/JinJinJenn" target="_blank" rel="noopener noreferrer">GitHub</a><span class="sep" aria-hidden="true">✦</span><span>Not affiliated with EA or Maxis.</span></footer>
+</div>
+<dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+<div class="dialog-header"><span class="mini-gem" aria-hidden="true"></span><span id="dialogBarTitle">In Jenn’s workshop</span><button class="close-dialog" id="closeDialog" type="button" aria-label="Close project details">×</button></div>
+<div class="dialog-body" id="dialogBody"></div>
+</dialog>
+<noscript><style>.loading-art{display:none}.garden-grid{display:none}.garden{min-height:40vh}</style><div style="background:#fff4df;padding:30px;color:#3d123e">JinJinJenn makes cozy Sims 4 mods and little game experiments. Enable JavaScript to open the embedded artwork and interactive garden, or visit <a href="https://jinjinjenn.github.io/">the main website</a>.</div></noscript>
+<script id="embeddedAssets" type="application/json">__ASSET_MAP__</script>
+<script>
+__GPU_SOURCE__
+</script>
+<script>
+(()=>{
+'use strict';
+const assets=JSON.parse(document.getElementById('embeddedAssets').textContent);
+const $=id=>document.getElementById(id),root=document.documentElement,shell=$('siteShell'),garden=$('home');
+const params=new URLSearchParams(location.search),qaWidth=Number(params.get('width'))||(params.get('view')==='mobile'?390:params.get('view')==='tablet'?820:0);
+if(qaWidth>=280&&qaWidth<=2560){shell.style.maxWidth=qaWidth+'px';document.body.classList.add('qa-width');root.style.setProperty('--qa-width',qaWidth+'px');}
+let gpu=null,paused=false,night=false,lastFocus=null,ready=false,layout='',parallaxRaf=0,pointerX=0,pointerY=0;
+const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
+let reduced=motionPreference.matches||params.get('motion')==='off';
+try{night=localStorage.getItem('jin-garden-night')==='true';paused=localStorage.getItem('jin-garden-paused')==='true';}catch(e){}
+if(reduced)paused=true;
+const pendingImages=[];
+function hydrateArt(){
+ document.querySelectorAll('[data-asset]:not([data-hydrated])').forEach(host=>{
+  if(host.hasAttribute('data-skip-mobile')&&layout==='mobile')return;
+  const a=assets[host.dataset.asset];if(!a)return;
+  const [x,y,r,b]=a.bounds,w=r-x,h=b-y;
+  host.style.aspectRatio=w+'/'+h;
+  const im=new Image();im.alt='';im.decoding='async';im.draggable=false;
+  im.style.cssText=`left:${-x/w*100}%;top:${-y/h*100}%;width:${a.width/w*100}%;height:${a.height/h*100}%;`;
+  im.src=a.src;host.append(im);host.dataset.hydrated='true';
+  pendingImages.push(im.decode().catch(()=>{host.dataset.error='true';}));
+ });
+ document.querySelectorAll('[data-src-asset]:not([data-hydrated])').forEach(im=>{im.src=assets[im.dataset.srcAsset].src;im.dataset.hydrated='true';pendingImages.push(im.decode().catch(()=>{}));});
+}
+function updateLayout(){
+ const w=shell.getBoundingClientRect().width,next=w<700?'mobile':w<1100?'tablet':'desktop';
+ if(next!==layout){layout=next;root.dataset.layout=next;hydrateArt();}
+ garden.dataset.layoutWidth=Math.round(w);
+ if(gpu)gpu.resize();
+}
+updateLayout();new ResizeObserver(updateLayout).observe(shell);
+const iconPaths={
+ 'love-notes':'<rect x="6" y="14" width="52" height="36" rx="6" fill="#ffe0c4"/><path d="M7 17L32 34 57 17M7 48l18-17m32 17L39 31" fill="none"/><path d="M32 42c-18-10-12-23-3-17l3 3 3-3c10-6 16 8-3 17" fill="#ff718e"/>',
+ 'surprise-gifts':'<rect x="12" y="28" width="40" height="30" rx="3" fill="#bc86ec"/><rect x="7" y="22" width="50" height="12" rx="3" fill="#e7bcff"/><path d="M28 22h8v36h-8z" fill="#ffe0e9"/><path d="M31 22C4 23 12-3 25 9l7 13C59 23 52-3 39 9z" fill="#f4b4df"/>',
+ 'thinking-of-you':'<path d="M13 46C-1 34 6 22 19 21 24 5 43 9 46 21 64 18 67 42 53 47z" fill="#ffe9ef"/><path d="M34 38C15 25 29 17 34 25c7-10 20 0 0 13" fill="#fc85ac"/><circle cx="12" cy="54" r="4" fill="#efc5ff"/>',
+ 'toasts':'<rect x="9" y="33" width="46" height="22" rx="7" fill="#f2b0ce"/><path d="M9 38q8 12 16 0 8 12 16 0 8 12 14 0" fill="#fff3ce"/><path d="M17 32V21m15 11V17m15 15V21"/><path d="M17 21q-8-8 0-14 8 6 0 14m15-4q-8-8 0-14 8 6 0 14m15 4q-8-8 0-14 8 6 0 14" fill="#ffc84b"/><path d="M4 57h56"/>',
+ 'gentle-hearts':'<path d="M32 56C-15 27 6-5 30 15l2 3 2-3C60-4 79 28 32 56z" fill="#ff789c"/><path d="M14 21q7-9 13-3" fill="none" stroke="#fff3df" stroke-width="4"/>',
+ 'toddler-tv':'<path d="M23 15L13 5m29 10L52 5"/><rect x="6" y="15" width="52" height="41" rx="11" fill="#b2bf88"/><rect x="12" y="21" width="34" height="28" rx="7" fill="#a6bdd1"/><path d="M22 37C12 16 25 15 28 36 33 13 42 19 35 38c10 14-22 19-13-1" fill="#fff3dd"/><circle cx="52" cy="29" r="2" fill="#efb277"/>'};
+const MODS={
+ 'move-anywhere':{name:'MoveAnywhere',status:'In testing',testing:true,headline:'A park can be home, too.',body:'Move a household into any lot, parks included, straight from Manage Worlds. The lot arrives as a real home.',points:['The lot type reads Residential and stays editable.','Build mode uses the household’s own funds.','The normal build catalog is available.','No surprise “Building Lot” screen.'],note:'Checked through moving in, opening build mode, saving and reloading. Download coming once it has been played with for a while.'},
+ 'love-notes':{name:'Love Notes',status:'In the workshop',headline:'A little note, just because.',body:'Write a line in a little text file and it pops up in the game as a sweet note.',points:['A small message from you, appearing during play.'],note:'Still in the workshop. Follow the devlog for progress.'},
+ 'surprise-gifts':{name:'Surprise Gifts',status:'In testing',testing:true,headline:'Something lovely in the inventory.',body:'Every now and then, a little gift turns up in your Sim’s inventory with a pop-up.',points:['Flowers, cupcakes or a plush.','A small surprise to brighten an ordinary day.'],note:'Working in testing. It will be shared once it has had more time in the game.'},
+ 'thinking-of-you':{name:'Thinking of You',status:'In the workshop',headline:'A warm little wave of affection.',body:'At random moments, a Sim in your household gets a warm “Thinking of You” moodlet.',points:['A gentle happy moment during everyday play.'],note:'Still in the workshop. Follow the devlog for progress.'},
+ 'toasts':{name:'Toasts',status:'In the workshop',headline:'Remember the days that matter.',body:'Birthday and anniversary pop-ups on real calendar dates you choose.',points:['A little celebration for a birthday.','A sweet reminder for an anniversary.'],note:'Still in the workshop. Follow the devlog for progress.'},
+ 'gentle-hearts':{name:'Gentle Hearts',status:'In the workshop',headline:'Let the rough days weigh a little less.',body:'Kids and teens get steady happy moodlets, bringing a little extra comfort to their days.',points:['Made for the younger Sims in the household.'],note:'Still in the workshop. Follow the devlog for progress.'},
+ 'toddler-tv':{name:'Toddler TV',status:'In testing',testing:true,headline:'A little independence for little Sims.',body:'Toddlers can watch the TV even when it is off: it switches itself on to the kids’ channel, then off again.',points:['The kids’ channel comes on for them.','The TV switches off again afterwards.'],note:'Working in testing. It will be shared once it has had more time in the game.'}
+};
+const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const modList=$('nativeModList');
+Object.entries(MODS).filter(([key])=>key!=='move-anywhere').forEach(([key,m])=>{
+ const button=document.createElement('button');button.className='native-mod';button.type='button';button.dataset.project=key;
+ button.innerHTML=`<svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="#552451" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">${iconPaths[key]}</svg><span><span class="mod-name">${escape(m.name)}</span><span class="badge${m.testing?' testing':''}">${escape(m.status)}</span></span><span class="arrow" aria-hidden="true">→</span>`;
+ modList.append(button);
+});
+const dialog=$('projectDialog');
+function showDialog(html,bar){
+ lastFocus=document.activeElement;$('dialogBody').innerHTML=html;$('dialogBarTitle').textContent=bar;
+ if(typeof dialog.showModal==='function')dialog.showModal();else{dialog.setAttribute('open','');dialog.style.position='fixed';dialog.style.inset='20px 0 auto';dialog.style.zIndex='100';}
+ dialog.scrollTop=0;$('closeDialog').focus();if(gpu)gpu.setPaused(true);
+}
+function closeDialog(){if(dialog.open&&typeof dialog.close==='function')dialog.close();else{dialog.removeAttribute('open');afterClose();}}
+function afterClose(){if(lastFocus&&document.contains(lastFocus))lastFocus.focus({preventScroll:true});if(gpu)gpu.setPaused(paused);}
+dialog.addEventListener('close',afterClose);$('closeDialog').addEventListener('click',closeDialog);
+dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog();}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&dialog.hasAttribute('open')){e.preventDefault();closeDialog();}});
+document.addEventListener('click',e=>{
+ const project=e.target.closest('[data-project]');if(project){const m=MODS[project.dataset.project];if(!m)return;
+  showDialog(`<span class="badge${m.testing?' testing':''}">${escape(m.status)}</span><h2 id="dialogTitle">${escape(m.name)}</h2><p><strong>${escape(m.headline)}</strong></p><p>${escape(m.body)}</p><ul>${m.points.map(p=>`<li>${escape(p)}</li>`).join('')}</ul><p class="dialog-note">${escape(m.note)}</p><a class="dialog-link" href="https://jinjinjenn.github.io/devlog/" target="_blank" rel="noopener noreferrer">Follow the devlog</a>`,m.name);return;
+ }
+ if(e.target.closest('[data-about]'))showDialog('<h2 id="dialogTitle">Hi, I’m Jenn.</h2><p>I make cozy Sims 4 mods for my own game and share what I’m working on here. Small things that make play feel a bit kinder.</p><p>The workshop is home to little notes, unexpected gifts, gentler days, and a few more ways to make yourself at home.</p><p><strong>Game design &amp; web</strong><br>Sketches, prototypes, small games and little sites are coming later.</p><div class="about-links"><a class="dialog-link" href="https://jinjinjenn.github.io/devlog/" target="_blank" rel="noopener noreferrer">Read the devlog</a><a class="dialog-link secondary" href="https://github.com/JinJinJenn" target="_blank" rel="noopener noreferrer">GitHub</a></div>','About Jenn');
+});
+function applyNight(){root.dataset.night=String(night);$('themeButton').setAttribute('aria-pressed',String(night));$('themeButton').setAttribute('aria-label',night?'Switch to sunset garden':'Switch to moonlit garden');if(gpu&&gpu.setNight)gpu.setNight(night);try{localStorage.setItem('jin-garden-night',String(night));}catch(e){}}
+$('themeButton').addEventListener('click',()=>{night=!night;applyNight();});applyNight();
+function applyMotion(){const still=paused||reduced;root.dataset.paused=String(still);root.dataset.reducedMotion=String(reduced);$('motionButton').setAttribute('aria-pressed',String(still));$('motionButton').setAttribute('aria-label',reduced?'Reduced motion is enabled':paused?'Play garden animation':'Pause garden animation');$('motionButton').disabled=reduced;$('motionText').textContent=reduced?'Reduced motion':paused?'Play animation':'Pause animation';$('motionMark').textContent=still?'▶':'Ⅱ';if(still){root.style.setProperty('--move-x',0);root.style.setProperty('--move-y',0);}if(gpu)gpu.setPaused(still||dialog.open);try{localStorage.setItem('jin-garden-paused',String(paused));}catch(e){}}
+$('motionButton').addEventListener('click',()=>{paused=!paused;applyMotion();});applyMotion();
+motionPreference.addEventListener('change',e=>{reduced=e.matches||params.get('motion')==='off';if(reduced)paused=true;applyMotion();});
+function startGPU(){
+ if(params.get('gpu')==='0'||typeof window.JinGardenGPU!=='function'){garden.dataset.renderer='static';return;}
+ try{gpu=new window.JinGardenGPU({canvas:$('gardenGPU'),anchors:[$('jerryAnchor'),$('rubyAnchor')],hero:garden,reducedMotion:params.get('motion')==='off',onState:state=>{garden.dataset.renderer=state.available?'webgl':'static';garden.dataset.gpuAvailable=String(!!state.available);garden.dataset.gpuReason=state.reason||'';garden.dataset.gpuError=window.__jinGPUStats?.lastError||'';}});gpu.setPaused(paused||reduced);if(gpu.setNight)gpu.setNight(night);}catch(e){garden.dataset.renderer='static';garden.dataset.gpuAvailable='false';garden.dataset.gpuError=e.message||String(e);}
+}
+let purrTimer=0;
+$('catButton').addEventListener('click',e=>{const cat=$('catButton');cat.classList.remove('petted');void cat.offsetWidth;cat.classList.add('petted');$('purr').textContent='Purrr. ♡';$('purr').classList.add('visible');clearTimeout(purrTimer);purrTimer=setTimeout(()=>$('purr').classList.remove('visible'),1900);if(gpu&&!paused){const r=cat.getBoundingClientRect();gpu.burst(r.left+r.width*.5,r.top+r.height*.3);}});
+garden.addEventListener('pointermove',e=>{if(paused||reduced||layout!=='desktop'||e.pointerType==='touch')return;const r=garden.getBoundingClientRect();pointerX=((e.clientX-r.left)/r.width-.5)*2;pointerY=((e.clientY-r.top)/r.height-.5)*2;if(!parallaxRaf)parallaxRaf=requestAnimationFrame(()=>{root.style.setProperty('--move-x',pointerX.toFixed(3));root.style.setProperty('--move-y',pointerY.toFixed(3));parallaxRaf=0;});});
+garden.addEventListener('pointerleave',()=>{root.style.setProperty('--move-x',0);root.style.setProperty('--move-y',0);});
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const target=document.querySelector(a.getAttribute('href'));if(!target)return;e.preventDefault();target.scrollIntoView({behavior:paused||reduced?'instant':'smooth',block:target===garden?'start':'center'});if(target.id==='mods')target.focus({preventScroll:true});try{history.replaceState(null,'',a.getAttribute('href'));}catch(err){}}));
+Promise.allSettled(pendingImages).then(()=>{ready=true;root.dataset.ready='true';$('loadingArt').classList.add('done');updateLayout();requestAnimationFrame(startGPU);});
+window.addEventListener('pagehide',()=>{if(gpu)gpu.setPaused(true);});
+window.addEventListener('pageshow',()=>{if(gpu){gpu.resize();gpu.setPaused(paused||reduced);}});
+window.addEventListener('resize',()=>{updateLayout();});
+})();
+</script>
+</body>
+</html>

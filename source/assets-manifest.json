@@ -1,0 +1,262 @@
+{
+  "00-background-garden": {
+    "file": "source/assets/00-background-garden.webp",
+    "width": 1915,
+    "height": 821,
+    "bounds": [
+      0,
+      0,
+      1915,
+      821
+    ],
+    "bytes": 2605946,
+    "format": "webp"
+  },
+  "01-foliage-left": {
+    "file": "source/assets/01-foliage-left.webp",
+    "width": 971,
+    "height": 1619,
+    "bounds": [
+      4,
+      1,
+      920,
+      1614
+    ],
+    "bytes": 1198560,
+    "format": "webp"
+  },
+  "02-foliage-top": {
+    "file": "source/assets/02-foliage-top.webp",
+    "width": 2172,
+    "height": 724,
+    "bounds": [
+      21,
+      109,
+      2152,
+      620
+    ],
+    "bytes": 816964,
+    "format": "webp"
+  },
+  "03-jerry-ruby": {
+    "file": "source/assets/03-jerry-ruby.webp",
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      54,
+      55,
+      1209,
+      1191
+    ],
+    "bytes": 1313960,
+    "format": "webp"
+  },
+  "04-plumbob-jerry": {
+    "file": "source/assets/04-plumbob-jerry.webp",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      162,
+      131,
+      860,
+      1338
+    ],
+    "bytes": 1098634,
+    "format": "webp"
+  },
+  "05-plumbob-ruby": {
+    "file": "source/assets/05-plumbob-ruby.webp",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      165,
+      137,
+      853,
+      1330
+    ],
+    "bytes": 998056,
+    "format": "webp"
+  },
+  "06-logo": {
+    "file": "source/assets/06-logo.webp",
+    "width": 2172,
+    "height": 724,
+    "bounds": [
+      82,
+      115,
+      2082,
+      595
+    ],
+    "bytes": 589206,
+    "format": "webp"
+  },
+  "07-welcome-panel": {
+    "file": "source/assets/07-welcome-panel.webp",
+    "width": 1086,
+    "height": 1448,
+    "bounds": [
+      110,
+      22,
+      978,
+      1389
+    ],
+    "bytes": 1085042,
+    "format": "webp"
+  },
+  "08-mod-collection-panel": {
+    "file": "source/assets/08-mod-collection-panel.webp",
+    "width": 1122,
+    "height": 1402,
+    "bounds": [
+      51,
+      63,
+      1075,
+      1336
+    ],
+    "bytes": 1181234,
+    "format": "webp"
+  },
+  "09-nav-mods": {
+    "file": "source/assets/09-nav-mods.webp",
+    "width": 1635,
+    "height": 962,
+    "bounds": [
+      108,
+      82,
+      1524,
+      855
+    ],
+    "bytes": 675802,
+    "format": "webp"
+  },
+  "10-nav-devlog": {
+    "file": "source/assets/10-nav-devlog.webp",
+    "width": 1635,
+    "height": 962,
+    "bounds": [
+      159,
+      125,
+      1480,
+      841
+    ],
+    "bytes": 710526,
+    "format": "webp"
+  },
+  "11-nav-about": {
+    "file": "source/assets/11-nav-about.webp",
+    "width": 1635,
+    "height": 962,
+    "bounds": [
+      170,
+      99,
+      1459,
+      829
+    ],
+    "bytes": 704032,
+    "format": "webp"
+  },
+  "12-nav-github": {
+    "file": "source/assets/12-nav-github.webp",
+    "width": 1635,
+    "height": 962,
+    "bounds": [
+      143,
+      110,
+      1481,
+      850
+    ],
+    "bytes": 553850,
+    "format": "webp"
+  },
+  "13-view-project-button": {
+    "file": "source/assets/13-view-project-button.webp",
+    "width": 2172,
+    "height": 724,
+    "bounds": [
+      117,
+      139,
+      2056,
+      592
+    ],
+    "bytes": 578690,
+    "format": "webp"
+  },
+  "14-theme-moon": {
+    "file": "source/assets/14-theme-moon.webp",
+    "width": 1536,
+    "height": 1024,
+    "bounds": [
+      425,
+      210,
+      1065,
+      837
+    ],
+    "bytes": 673464,
+    "format": "webp"
+  },
+  "15-taskbar": {
+    "file": "source/assets/15-taskbar.webp",
+    "width": 2172,
+    "height": 724,
+    "bounds": [
+      45,
+      323,
+      2127,
+      405
+    ],
+    "bytes": 117706,
+    "format": "webp"
+  },
+  "16-taskbar-tab-welcome": {
+    "file": "source/assets/16-taskbar-tab-welcome.webp",
+    "width": 2172,
+    "height": 724,
+    "bounds": [
+      195,
+      157,
+      1978,
+      584
+    ],
+    "bytes": 407846,
+    "format": "webp"
+  },
+  "17-taskbar-tab-mods": {
+    "file": "source/assets/17-taskbar-tab-mods.webp",
+    "width": 2172,
+    "height": 724,
+    "bounds": [
+      330,
+      158,
+      1840,
+      565
+    ],
+    "bytes": 337458,
+    "format": "webp"
+  },
+  "18-sleeping-cat": {
+    "file": "source/assets/18-sleeping-cat.webp",
+    "width": 1774,
+    "height": 887,
+    "bounds": [
+      208,
+      78,
+      1468,
+      833
+    ],
+    "bytes": 478358,
+    "format": "webp"
+  },
+  "19-foliage-right": {
+    "file": "source/assets/19-foliage-right.webp",
+    "width": 2172,
+    "height": 724,
+    "bounds": [
+      14,
+      41,
+      2161,
+      716
+    ],
+    "bytes": 1471394,
+    "format": "webp"
+  }
+}
