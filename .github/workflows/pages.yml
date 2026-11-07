@@ -1,0 +1,88 @@
+name: Publish mods preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - source/**
+      - tools/build.py
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    outputs:
+      ready: ${{ steps.verify.outputs.ready }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify the approved standalone site
+        id: verify
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import os
+          from pathlib import Path
+          import shutil
+          import subprocess
+          import sys
+
+          page = Path('index.html')
+          output = Path(os.environ['GITHUB_OUTPUT'])
+          if not page.is_file():
+              with output.open('a') as stream:
+                  stream.write('ready=false\n')
+              print('::notice::The approved index.html has not been imported. No site will be published.')
+              sys.exit(0)
+
+          approved = '0364b9948dc46f084f13b2b439a77ae588492e4d8bed76e88f376e1e6595255c'
+          digest = hashlib.sha256(page.read_bytes()).hexdigest()
+          builder = Path('tools/build.py')
+          if builder.is_file():
+              subprocess.run([sys.executable, str(builder), '--check'], check=True)
+          elif digest != approved:
+              raise SystemExit('Without editable source, only the exact approved HTML baseline may be deployed.')
+
+          site = Path('_site')
+          site.mkdir(exist_ok=True)
+          shutil.copy2(page, site / 'index.html')
+          (site / '.nojekyll').touch()
+          with output.open('a') as stream:
+              stream.write('ready=true\n')
+          print('Verified index.html SHA-256:', digest)
+          PY
+      - name: Read Pages configuration
+        if: steps.verify.outputs.ready == 'true'
+        uses: actions/configure-pages@v5
+      - name: Upload only the public website
+        if: steps.verify.outputs.ready == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.ready == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
